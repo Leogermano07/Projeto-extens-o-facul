@@ -1,0 +1,200 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#FFF8F3;
+    color:#4A2C18;
+}
+
+/* HEADER */
+
+header{
+    width:100%;
+    padding:50px 8%;
+    background:#FFF8F3;
+}
+
+.container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.texto{
+    width:40%;
+}
+
+.texto h1{
+    font-size:48px;
+    font-weight:800;
+    line-height:55px;
+    margin-bottom:30px;
+}
+
+.texto button{
+    background:#F5C542;
+    color:#4A2C18;
+    border:none;
+    padding:15px 40px;
+    border-radius:40px;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.texto button:hover{
+    transform:scale(1.08);
+    background:#ffcd38;
+}
+
+.logo{
+    width:45%;
+    display:flex;
+    justify-content:center;
+}
+
+.logo img{
+    width:100%;
+    max-width:450px;
+}
+
+/* MENU */
+
+nav{
+    background:#F5C542;
+    padding:18px;
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+    gap:70px;
+}
+
+nav a{
+    color:#5A331B;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:white;
+}
+
+/* GALERIA */
+
+.galeria{
+    display:grid;
+    grid-template-columns:1fr 2fr;
+    gap:15px;
+    padding:30px 8%;
+    background:#F5C542;
+}
+
+.galeria img{
+    width:100%;
+    border-radius:10px;
+    transition:.4s;
+}
+
+.galeria img:hover{
+    transform:scale(1.03);
+}
+
+.bolo-pequeno img{
+    height:320px;
+    object-fit:cover;
+}
+
+.bolo-grande img{
+    height:320px;
+    object-fit:cover;
+}
+
+/* SERVIÇOS */
+
+.servicos{
+    background:#F5C542;
+    padding:80px 8%;
+}
+
+.servicos h2{
+    font-size:55px;
+    line-height:65px;
+    font-weight:800;
+    max-width:700px;
+}
+
+/* FOOTER */
+
+footer{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    gap:30px;
+    background:#F5C542;
+    padding:50px;
+}
+
+footer h4{
+    margin-bottom:10px;
+    font-size:18px;
+}
+
+footer p{
+    color:#6d4a27;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:900px){
+
+.container{
+    flex-direction:column;
+    text-align:center;
+}
+
+.texto{
+    width:100%;
+}
+
+.logo{
+    width:100%;
+    margin-top:40px;
+}
+
+.logo img{
+    width:280px;
+}
+
+.texto h1{
+    font-size:38px;
+}
+
+nav ul{
+    flex-direction:column;
+    gap:20px;
+}
+
+.galeria{
+    grid-template-columns:1fr;
+}
+
+.servicos h2{
+    font-size:38px;
+    line-height:45px;
+}
+
+footer{
+    flex-direction:column;
+    text-align:center;
+}
+
+}

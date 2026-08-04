@@ -1,0 +1,148 @@
+/* Resets Básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1a0f07;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    color: #dca854; /* Tom Dourado */
+}
+
+/* Container Principal Estilo Cardápio Físico/Mobile */
+.menu-container {
+    width: 100%;
+    max-width: 480px;
+    background-color: #3b1e08; /* Castanho Escuro de Fundo */
+    box-shadow: 0 0 20px rgba(0,0,0,0.8);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Imagens */
+.header-image img,
+.footer-image img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Conteúdo */
+.menu-content {
+    padding: 30px 25px;
+    text-align: center;
+}
+
+.divider-line {
+    width: 120px;
+    height: 1px;
+    background-color: #dca854;
+    margin: 0 auto 15px auto;
+}
+
+.main-title {
+    font-family: 'Cinzel', serif;
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+    color: #e5b364;
+}
+
+/* Barra de Busca */
+.search-box {
+    margin-bottom: 25px;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: 1px solid #dca854;
+    background-color: #2b1404;
+    color: #fff;
+    outline: none;
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+.search-box input::placeholder {
+    color: #a88143;
+}
+
+/* Seções */
+.menu-section {
+    margin-bottom: 35px;
+}
+
+.section-title {
+    font-family: 'Cinzel', serif;
+    font-size: 1.05rem;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+    color: #e5b364;
+    text-transform: uppercase;
+}
+
+/* Lista de Itens */
+.item-list {
+    list-style: none;
+}
+
+.item-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 12px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-align: left;
+    line-height: 1.3;
+}
+
+.item-name {
+    width: 75%;
+    padding-right: 10px;
+}
+
+.item-price {
+    width: 25%;
+    text-align: right;
+    white-space: nowrap;
+}
+
+/* Rodapé / Chamada WhatsApp */
+.menu-footer {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(220, 168, 84, 0.3);
+}
+
+.menu-footer p {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.whatsapp-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #25d366;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 0.85rem;
+    transition: background 0.3s;
+}
+
+.whatsapp-btn:hover {
+    background-color: #1ebc57;
+}
