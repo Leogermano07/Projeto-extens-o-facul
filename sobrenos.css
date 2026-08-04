@@ -10,45 +10,10 @@ body {
     font-family: 'Poppins', sans-serif;
     color: #f1b351; /* Dourado/Amarelo do Texto */
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     padding: 40px 20px;
-}
-
-.back-btn {
-    display: inline-block;
-    margin-bottom: 25px;
-    padding: 10px 18px;
-    background-color: #f7c768;
-    color: #2b1404;
-    text-decoration: none;
-    border-radius: 999px;
-    font-weight: 600;
-    transition: transform 0.2s ease, background-color 0.2s ease;
-}
-
-.back-btn:hover {
-    transform: translateY(-2px);
-    background-color: #ffd97a;
-}
-
-.footer-contact-btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 22px;
-    background-color: #f7c768;
-    color: #2b1404;
-    text-decoration: none;
-    border-radius: 999px;
-    font-weight: 700;
-    transition: transform 0.2s ease, background-color 0.2s ease;
-}
-
-.footer-contact-btn:hover {
-    transform: translateY(-2px);
-    background-color: #ffd97a;
 }
 
 .page-container {
