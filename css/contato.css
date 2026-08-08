@@ -28,6 +28,23 @@ color:#f6c25a;
 
 }
 
+.login-btn {
+    display: inline-block;
+    margin-left: 14px;
+    padding: 10px 16px;
+    background: #f6c25a;
+    color: #2b1404;
+    text-decoration: none;
+    border-radius: 999px;
+    font-weight: 600;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.login-btn:hover {
+    transform: translateY(-2px);
+    background: #ffd26c;
+}
+
 .back-btn {
     display: inline-block;
     margin-bottom: 20px;

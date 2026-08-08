@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ruah Sabores - Painel Administrativo</title>
+
+    <link rel="stylesheet" href="css/administrador.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="brand">
+            <div class="crown">♛</div>
+
+            <div class="logo">
+                <span>Ruah</span>
+                <strong>Sabores</strong>
+            </div>
+
+            <div class="drip drip-1"></div>
+            <div class="drip drip-2"></div>
+            <div class="drip drip-3"></div>
+        </div>
+
+
+        <div class="profile">
+
+            <div class="avatar">
+                <span>👩🏻</span>
+            </div>
+
+            <div class="profile-info">
+                <strong>Olá, Amanda!</strong>
+                <span>(Administradora)</span>
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= NAVEGAÇÃO ================= -->
+
+    <nav class="navigation">
+
+        <button class="nav-item active" data-page="dashboard">
+            Painel Geral
+        </button>
+
+    </nav>
+
+
+    <!-- ================= CONTEÚDO ================= -->
+
+    <main class="content">
+
+        <h1 class="page-title">Painel Geral</h1>
+
+
+        <!-- ================= CARDS ================= -->
+
+        <section class="stats">
+
+            <div class="stat-card">
+
+                <div class="stat-icon">🛒</div>
+
+                <h2>Novos Pedidos</h2>
+
+                <span class="stat-value">0</span>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">💵</div>
+
+                <h2>Receita Mensal</h2>
+
+                <span class="stat-value">R$ 0,00</span>
+
+            </div>
+
+
+            <div class="stat-card warning">
+
+                <div class="stat-icon">🍰</div>
+
+                <h2>Estoque de Fatias</h2>
+
+                <span class="warning-text">
+                    ⚠ Estoque do item baixo
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= GRID PRINCIPAL ================= -->
+
+        <section class="dashboard-grid">
+
+
+            <!-- COLUNA PRINCIPAL -->
+
+            <div class="main-column">
+
+
+                <!-- PEDIDOS -->
+
+                <section class="panel orders-panel">
+
+                    <div class="panel-title">
+                        Pedidos
+                    </div>
+
+                    <div class="table-wrapper">
+
+                        <table>
+
+                            <thead>
+
+                                <tr>
+                                    <th>Últimos Pedidos</th>
+                                    <th>Cliente</th>
+                                    <th>Data</th>
+                                    <th>Itens</th>
+                                    <th>Valor Total</th>
+                                    <th>Status</th>
+                                </tr>
+
+                            </thead>
+
+                            <tbody>
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </section>
+
+
+                <!-- ÁREA INFERIOR -->
+
+                <section class="empty-panel">
+
+                </section>
+
+            </div>
+
+
+            <!-- ================= COLUNA DIREITA ================= -->
+
+            <aside class="side-column">
+
+
+                <!-- AÇÕES -->
+
+                <section class="side-panel">
+
+                    <h2>Ações Rápidas</h2>
+
+                    <button class="action-button" data-action="bolo">
+                        + Adicionar Novo Bolo
+                    </button>
+
+                    <button class="action-button" data-action="evento">
+                        + Criar Evento
+                    </button>
+
+                    <button class="action-button" data-action="funcionario">
+                        + Cadastrar Funcionário
+                    </button>
+
+                </section>
+
+
+                <!-- HORÁRIOS -->
+
+                <section class="side-panel schedule">
+
+                    <h2>
+                        Horários de<br>
+                        Funcionamento
+                    </h2>
+
+
+                    <div class="schedule-row">
+
+                        <span>Seg - Sex</span>
+                        <span>08:00 - 18:00</span>
+
+                    </div>
+
+
+                    <div class="schedule-row">
+
+                        <span>Sáb</span>
+                        <span>09:00 - 13:00</span>
+
+                    </div>
+
+
+                    <div class="schedule-row">
+
+                        <span>Dom</span>
+                        <span>Fechado</span>
+
+                    </div>
+
+                </section>
+
+            </aside>
+
+        </section>
+
+    </main>
+
+
+    <!-- TOAST -->
+
+    <div id="toast" class="toast">
+        Ação realizada com sucesso!
+    </div>
+
+</div>
+
+
+<script src="js/administrador.js"></script>
+
+</body>
+</html>

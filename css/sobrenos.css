@@ -34,6 +34,32 @@ body {
     background-color: #ffd97a;
 }
 
+.top-actions {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.login-btn {
+    display: inline-block;
+    padding: 10px 18px;
+    background-color: #f7c768;
+    color: #2b1404;
+    text-decoration: none;
+    border-radius: 999px;
+    font-weight: 600;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.login-btn:hover {
+    transform: translateY(-2px);
+    background-color: #ffd97a;
+}
+
 .footer-contact-btn {
     display: inline-block;
     margin-top: 20px;

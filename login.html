@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Ruah Sabores - Login</title>
+
+  <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+
+  <a href="index.html" class="back-button">← Menu Principal</a>
+
+  <main class="login-page">
+
+    <!-- LADO DA IMAGEM -->
+    <section class="image-side">
+      <img src="img/bolo.jpg" alt="Bolo de chocolate com morangos e cerejas">
+    </section>
+
+
+    <!-- LADO DO LOGIN -->
+    <section class="login-side">
+
+      <div class="login-container">
+
+        <!-- LOGO -->
+        <div class="logo">
+          <div class="crown">⌁</div>
+
+          <h1>Ruah</h1>
+          <h2>Sabores</h2>
+
+          <span class="small-text">CONFEITARIA</span>
+        </div>
+
+
+        <h3 class="login-title">LOGIN DO CLIENTE</h3>
+
+
+        <!-- CARD -->
+        <div class="login-card">
+
+          <form id="loginForm">
+
+            <div class="input-group">
+              <label for="email">
+                E-mail ou Telefone
+              </label>
+
+              <input
+                type="text"
+                id="email"
+                name="email"
+                autocomplete="username"
+                required
+              >
+            </div>
+
+
+            <div class="input-group password-group">
+              <label for="password">
+                Senha
+              </label>
+
+              <input
+                type="password"
+                id="password"
+                name="password"
+                autocomplete="current-password"
+                required
+              >
+            </div>
+
+
+            <div class="forgot">
+              <a href="#" id="forgotPassword">
+                Esqueceu a senha?
+              </a>
+            </div>
+
+
+            <button type="submit" class="login-button">
+              ACESSAR SUA CONTA
+            </button>
+
+          </form>
+
+        </div>
+
+
+        <!-- CADASTRO -->
+        <div class="register-area">
+
+          <p>Ainda não é cliente?</p>
+
+          <div class="social-buttons">
+
+            <a href="#" class="outline-button" id="registerButton">
+              <span class="icon user-icon">○</span>
+              Cadastre-se
+            </a>
+
+            <a href="#" class="outline-button" id="googleButton">
+              <span class="google-icon">G</span>
+              Continuar com Google
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <!-- CONTATO -->
+        <div class="contact">
+
+          <div>
+            <strong>E-mail</strong>
+            <span>RuahSabores@gmail.com</span>
+          </div>
+
+          <div>
+            <strong>Telefone</strong>
+            <span>+55 11 96619-7760</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <div id="message" class="message"></div>
+
+  <script src="js/login.js"></script>
+
+</body>
+</html>

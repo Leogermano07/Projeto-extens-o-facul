@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ruah Sabores - Carrinho</title>
+
+    <link rel="stylesheet" href="css/carrinho.css">
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="logo">
+        <div class="crown">♛</div>
+        <span>Ruah</span>
+        <strong>Sabores</strong>
+    </div>
+
+    <div class="client">
+        <div class="avatar">👩🏻</div>
+
+        <div>
+            <strong>Olá, Cliente</strong>
+            <span>(Logado)</span>
+        </div>
+    </div>
+
+</header>
+
+
+<nav class="navigation">
+
+    <button class="nav active">
+        Painel Geral
+    </button>
+
+    <button class="nav">
+        Cardápio
+    </button>
+
+    <button class="nav">
+        Histórico de Pedidos
+    </button>
+
+    <button class="nav">
+        Meus Dados
+    </button>
+
+</nav>
+
+
+<main class="container">
+
+    <!-- ================= CARRINHO ================= -->
+
+    <section class="cart-section">
+
+        <h1>Carrinho de Compras</h1>
+
+        <div class="cart-table">
+
+            <div class="cart-header">
+
+                <span>Item</span>
+                <span>Item</span>
+                <span>Quantidade</span>
+                <span>Unidade</span>
+                <span>Remover</span>
+
+            </div>
+
+
+            <div id="cartItemsContainer"></div>
+
+            <div id="emptyMessage" class="empty-message" style="display: none;">
+                Seu carrinho está vazio. Adicione itens no cardápio.
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= RESUMO ================= -->
+
+    <aside class="summary">
+
+        <div class="summary-card">
+
+            <h2>Resumo do Pedido</h2>
+
+
+            <div class="summary-row">
+
+                <span>Subtotal:</span>
+
+                <strong id="subtotal">
+                    R$ 242,00
+                </strong>
+
+            </div>
+
+
+            <div class="delivery">
+
+                <div class="summary-row">
+
+                    <span>
+                        Taxa de Entrega:
+                        <small>
+                            (based on usuário-defined cep)
+                        </small>
+                    </span>
+
+                    <strong>
+                        R$ 10,00
+                    </strong>
+
+                </div>
+
+
+                <label for="cep">
+                    CEP:
+                </label>
+
+                <div class="cep">
+
+                    <input
+                        type="text"
+                        id="cep"
+                        placeholder="95010-330"
+                        maxlength="9"
+                    >
+
+                    <button id="changeCep">
+                        Change
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- CUPOM -->
+
+            <div class="coupon">
+
+                <label>
+                    Cupom de Desconto:
+                </label>
+
+                <div class="coupon-input">
+
+                    <input
+                        type="text"
+                        id="coupon"
+                    >
+
+                    <button id="applyCoupon">
+                        Aplicar
+                    </button>
+
+                </div>
+
+                <span
+                    id="couponMessage"
+                    class="coupon-message"
+                ></span>
+
+            </div>
+
+
+            <!-- PRESENTE -->
+
+            <label class="gift">
+
+                <input
+                    type="checkbox"
+                    id="gift"
+                >
+
+                <span>
+                    Adicionar Embalagem<br>
+                    de Presente?
+                </span>
+
+                <strong>
+                    +R$ 15,00
+                </strong>
+
+            </label>
+
+
+            <!-- TOTAL -->
+
+            <div class="total">
+
+                <strong>
+                    Total do Pedido:
+                </strong>
+
+                <strong id="total">
+                    R$ 252,00
+                </strong>
+
+            </div>
+
+
+            <button
+                class="checkout"
+                id="checkout"
+            >
+                FINALIZAR COMPRA
+            </button>
+
+
+            <button
+                class="continue"
+                id="continueShopping"
+            >
+                CONTINUAR COMPRANDO
+            </button>
+
+        </div>
+
+
+        <!-- ================= INFO ================= -->
+
+        <div class="info-card">
+
+            <div class="info-icon">
+                i
+            </div>
+
+            <div>
+
+                <div>
+                    Seg - Sex&nbsp;&nbsp; 08:00 - 18:00
+                </div>
+
+                <div>
+                    Sáb&nbsp;&nbsp; 09:00 - 13:00
+                </div>
+
+                <div>
+                    Contactos: don Olá, Amanda!
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- SUPORTE -->
+
+        <button
+            class="support"
+            id="support"
+        >
+            💬 Suporte Online
+        </button>
+
+    </aside>
+
+</main>
+
+
+<div id="toast" class="toast"></div>
+
+
+<script src="carrinho.js"></script>
+
+</body>
+</html>

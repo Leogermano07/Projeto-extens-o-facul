@@ -1,0 +1,532 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --brown-dark: #3d1c07;
+  --brown: #522a0d;
+  --brown-light: #6d3b18;
+  --gold: #f4c541;
+  --gold-light: #ffd66b;
+  --text: #f5d991;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--brown-dark);
+  color: white;
+}
+
+.back-button {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: rgba(244, 196, 65, 0.18);
+  border: 1px solid rgba(244, 196, 65, 0.6);
+  color: #f7e4a4;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+  z-index: 10;
+}
+
+.back-button:hover {
+  transform: translateY(-1px);
+  background: rgba(244, 196, 65, 0.28);
+  color: #ffffff;
+}
+
+
+/* =========================
+   PÁGINA
+========================= */
+
+.login-page {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+}
+
+
+/* =========================
+   IMAGEM
+========================= */
+
+.image-side {
+  width: 50%;
+  min-height: 100vh;
+  overflow: hidden;
+  background: #ddd;
+}
+
+.image-side img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+/* =========================
+   LADO LOGIN
+========================= */
+
+.login-side {
+  width: 50%;
+  min-height: 100vh;
+
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(120, 65, 25, 0.25),
+      transparent 60%
+    ),
+    linear-gradient(
+      135deg,
+      #4d250b 0%,
+      #3a1905 100%
+    );
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 40px 30px;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 490px;
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.logo {
+  text-align: center;
+  position: relative;
+  margin-bottom: 45px;
+}
+
+.logo h1 {
+  font-family: Arial, sans-serif;
+  font-size: clamp(48px, 5vw, 70px);
+  line-height: 0.8;
+  font-weight: 800;
+  letter-spacing: -4px;
+  color: #f7f5f0;
+}
+
+.logo h2 {
+  display: inline-block;
+
+  margin-top: 8px;
+
+  font-size: clamp(38px, 4vw, 56px);
+  line-height: 0.9;
+
+  font-weight: 900;
+  letter-spacing: -3px;
+
+  color: #f6bf3e;
+
+  text-shadow:
+    0 2px 0 rgba(0, 0, 0, 0.15);
+}
+
+.crown {
+  position: absolute;
+
+  top: -42px;
+  left: calc(50% - 50px);
+
+  color: #f6c44c;
+
+  font-size: 70px;
+  font-weight: bold;
+
+  transform: rotate(-10deg);
+}
+
+.small-text {
+  position: absolute;
+
+  right: 22px;
+  top: 0;
+
+  color: #dfc18a;
+
+  font-size: 7px;
+  letter-spacing: 1px;
+
+  transform: rotate(-25deg);
+}
+
+
+/* =========================
+   TÍTULO
+========================= */
+
+.login-title {
+  text-align: center;
+
+  color: #f7c856;
+
+  font-size: clamp(25px, 3vw, 40px);
+
+  font-weight: 800;
+
+  margin-bottom: 20px;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.login-card {
+  width: 100%;
+
+  padding: 22px;
+
+  border-radius: 15px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(105, 57, 25, 0.75),
+      rgba(73, 36, 13, 0.9)
+    );
+
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.22);
+}
+
+
+/* =========================
+   INPUTS
+========================= */
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+
+  color: #e6c47d;
+
+  font-size: 17px;
+
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+
+  height: 39px;
+
+  padding: 0 14px;
+
+  border: 1px solid #e6b94c;
+  border-radius: 14px;
+
+  outline: none;
+
+  background: rgba(51, 27, 10, 0.5);
+
+  color: white;
+
+  font-size: 16px;
+
+  transition: 0.2s;
+}
+
+.input-group input:focus {
+  border-color: #ffd75e;
+
+  box-shadow:
+    0 0 0 2px rgba(255, 205, 74, 0.15);
+}
+
+
+/* =========================
+   ESQUECEU SENHA
+========================= */
+
+.forgot {
+  text-align: right;
+
+  margin-top: -3px;
+  margin-bottom: 16px;
+}
+
+.forgot a {
+  color: #e8c87e;
+
+  font-size: 15px;
+
+  text-decoration: none;
+}
+
+.forgot a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+
+/* =========================
+   BOTÃO LOGIN
+========================= */
+
+.login-button {
+  width: 100%;
+
+  height: 47px;
+
+  border: none;
+  border-radius: 25px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #f7ca3d,
+      #efc238
+    );
+
+  color: #17100a;
+
+  font-size: 18px;
+  font-weight: 800;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s,
+    filter 0.2s,
+    box-shadow 0.2s;
+}
+
+.login-button:hover {
+  filter: brightness(1.08);
+
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 5px 15px rgba(246, 195, 54, 0.25);
+}
+
+.login-button:active {
+  transform: translateY(0);
+}
+
+
+/* =========================
+   CADASTRO
+========================= */
+
+.register-area {
+  margin-top: 20px;
+
+  text-align: center;
+}
+
+.register-area p {
+  color: #e5c37c;
+
+  font-size: 16px;
+
+  margin-bottom: 11px;
+}
+
+.social-buttons {
+  display: flex;
+  gap: 14px;
+}
+
+.outline-button {
+  flex: 1;
+
+  height: 43px;
+
+  border: 1px solid #d8af53;
+  border-radius: 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  color: #e6c47d;
+
+  text-decoration: none;
+
+  font-size: 15px;
+
+  transition: 0.2s;
+}
+
+.outline-button:hover {
+  background: rgba(239, 190, 69, 0.1);
+
+  border-color: #f4c541;
+
+  color: #fff;
+}
+
+.icon {
+  font-size: 22px;
+}
+
+.google-icon {
+  font-size: 23px;
+  font-weight: bold;
+  color: #f4c541;
+}
+
+
+/* =========================
+   CONTATO
+========================= */
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 30px;
+
+  color: #e3bf72;
+}
+
+.contact div {
+  display: flex;
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+.contact strong {
+  font-size: 17px;
+}
+
+.contact span {
+  font-size: 15px;
+}
+
+
+/* =========================
+   MENSAGEM
+========================= */
+
+.message {
+  position: fixed;
+
+  bottom: 25px;
+  left: 50%;
+
+  transform: translate(-50%, 100px);
+
+  background: #f3c43f;
+  color: #291405;
+
+  padding: 13px 25px;
+
+  border-radius: 25px;
+
+  font-weight: bold;
+
+  opacity: 0;
+
+  transition: 0.3s;
+
+  z-index: 100;
+}
+
+.message.show {
+  opacity: 1;
+
+  transform: translate(-50%, 0);
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+  .login-page {
+    flex-direction: column;
+  }
+
+  .image-side {
+    width: 100%;
+    height: 38vh;
+    min-height: 280px;
+  }
+
+  .login-side {
+    width: 100%;
+    min-height: auto;
+
+    padding: 45px 25px;
+  }
+
+  .logo {
+    margin-bottom: 35px;
+  }
+
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 550px) {
+
+  .image-side {
+    height: 280px;
+    min-height: 0;
+  }
+
+  .login-side {
+    padding: 40px 16px;
+  }
+
+  .login-card {
+    padding: 18px;
+  }
+
+  .login-title {
+    font-size: 26px;
+  }
+
+  .social-buttons {
+    flex-direction: column;
+  }
+
+  .contact {
+    gap: 25px;
+    flex-direction: column;
+  }
+
+  .logo h1 {
+    font-size: 55px;
+  }
+
+  .logo h2 {
+    font-size: 44px;
+  }
+
+}

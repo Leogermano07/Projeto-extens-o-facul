@@ -27,6 +27,23 @@ body {
     transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
+.login-btn {
+    display: inline-block;
+    margin: 0 0 16px 16px;
+    padding: 10px 16px;
+    background-color: #dca854;
+    color: #1a0f07;
+    text-decoration: none;
+    border-radius: 999px;
+    font-weight: 700;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.login-btn:hover {
+    transform: translateY(-2px);
+    background-color: #e7bf73;
+}
+
 .back-btn:hover {
     transform: translateY(-2px);
     background-color: #e7bf73;
@@ -131,9 +148,10 @@ body {
 }
 
 .item-list li {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    align-items: center;
+    gap: 12px;
     margin-bottom: 12px;
     font-size: 0.78rem;
     font-weight: 600;
@@ -143,14 +161,63 @@ body {
 }
 
 .item-name {
-    width: 75%;
+    width: auto;
     padding-right: 10px;
 }
 
 .item-price {
-    width: 25%;
+    width: auto;
     text-align: right;
     white-space: nowrap;
+}
+
+.cart-btn {
+    display: inline-flex;
+    align-items: center;
+    margin: 0 0 16px 16px;
+    padding: 10px 16px;
+    background-color: #8c6a33;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 999px;
+    font-weight: 700;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.cart-btn:hover {
+    transform: translateY(-2px);
+    background-color: #b1894d;
+}
+
+.cart-count {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 20px;
+    padding: 2px 8px;
+    margin-left: 10px;
+    border-radius: 999px;
+    background-color: #f3d27f;
+    color: #1a0f07;
+    font-size: 0.75rem;
+    font-weight: 800;
+}
+
+.add-to-cart {
+    border: none;
+    background-color: #dca854;
+    color: #1a0f07;
+    padding: 8px 14px;
+    border-radius: 999px;
+    cursor: pointer;
+    font-size: 0.75rem;
+    font-weight: 700;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.add-to-cart:hover {
+    transform: translateY(-1px);
+    background-color: #e7bf73;
 }
 
 /* Rodapé / Chamada WhatsApp */
